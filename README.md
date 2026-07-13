@@ -23,7 +23,7 @@ The model was exported in TensorFlow to Keras format, producing the following fi
 - labels.txt
 
 ### 4. Prediction Script
-A Python script (predict.py) was written to:
+A Python script (car_accident_detection.ipynb) was written to:
 - Load the trained model
 - Accept an input image
 - Predict the image class (Accident / No_Accident) along with a confidence score
@@ -36,8 +36,8 @@ Two test images were used to evaluate the model:
 
 | Test Image | Predicted Class |
 |---|---|
-| accident_test.jpg | Accident |
-| no_accident_test.jpg | No_Accident |
+| accident_test.png | Accident |
+| no_accident_test.png | No_Accident |
 
 Screenshots of both predictions are included in this repository as proof of the model's output:
 - output_accident.png - shows the model correctly predicting "Accident"
