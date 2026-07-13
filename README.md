@@ -1,4 +1,3 @@
-# car-accident-detection
 # Car Accident Detection Model
 
 An image classification model that detects whether a car in an image is involved in an accident or not. The model was trained using Google Teachable Machine.
@@ -24,14 +23,11 @@ The model was exported in TensorFlow to Keras format, producing the following fi
 
 ### 4. Prediction Script
 A Python notebook (car_accident_detection.ipynb) was written to:
-
-Load the trained model
-Accept an input image
-Predict the image class (Accident / No_Accident) along with a confidence score
+- Load the trained model
+- Accept an input image
+- Predict the image class (Accident / No_Accident) along with a confidence score
 
 The notebook was run on Google Colab.
-
-The script was run on Google Colab.
 
 ## Results
 
@@ -39,18 +35,24 @@ Two test images were used to evaluate the model:
 
 | Test Image | Predicted Class |
 |---|---|
-| accident_test.png | Accident |
-| no_accident_test.png | No_Accident |
+| accident_test.jpg | Accident |
+| no_accident_test.jpg | No_Accident |
 
 Screenshots of both predictions are included in this repository as proof of the model's output:
-- output_accident.png - shows the model correctly predicting "Accident"
-- output_no_accident.png - shows the model correctly predicting "No_Accident"
+
+**Accident prediction**
+
+![Accident Prediction](output_accident.png)
+
+**No accident prediction**
+
+![No Accident Prediction](output_no_accident.png)
 
 ## Repository Contents
 
 | File | Description |
 |---|---|
-| predict.py | Python script that loads the model and predicts the image class |
+| car_accident_detection.ipynb | Python notebook that loads the model and predicts the image class |
 | keras_model.h5 | Trained model exported from Teachable Machine |
 | labels.txt | Class names (Accident / No_Accident) |
 | output_accident.png | Output screenshot for the accident test image |
@@ -58,10 +60,15 @@ Screenshots of both predictions are included in this repository as proof of the 
 
 ## How to Run
 
+1. Open car_accident_detection.ipynb in Google Colab
+2. Run the first cell to install dependencies:
+
 ```bash
 pip install tensorflow tf_keras pillow numpy
-python predict.py path/to/image.jpg
 ```
+
+3. Upload keras_model.h5, labels.txt, and the test image when prompted
+4. Run the remaining cells to get the predicted class and confidence score
 
 ## Tools Used
 - Google Teachable Machine (model training)
