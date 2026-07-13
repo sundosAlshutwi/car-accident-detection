@@ -23,10 +23,13 @@ The model was exported in TensorFlow to Keras format, producing the following fi
 - labels.txt
 
 ### 4. Prediction Script
-A Python script (car_accident_detection.ipynb) was written to:
-- Load the trained model
-- Accept an input image
-- Predict the image class (Accident / No_Accident) along with a confidence score
+A Python notebook (car_accident_detection.ipynb) was written to:
+
+Load the trained model
+Accept an input image
+Predict the image class (Accident / No_Accident) along with a confidence score
+
+The notebook was run on Google Colab.
 
 The script was run on Google Colab.
 
